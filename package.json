@@ -1,0 +1,26 @@
+{
+  "name": "project-02",
+  "version": "1.0.0",
+  "description": "Second project for red academy webdev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coryjh85/instanews.git"
+  },
+  "author": "Cory Hall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coryjh85/instanews/issues"
+  },
+  "homepage": "https://github.com/Coryjh85/instanews#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2"
+  }
+}

@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*------------------Fonts-----------------*/
+@font-face {
+    font-family: "opensans";
+    src: url("../fonts/opensans-light.eot"),
+         url("../fonts/opensans-light.woff2") format("woff2"),
+         url("../fonts/opensans-light.ttf") format("truetype"),
+         url("../fonts/opensans-light.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "opensans";
+    src: url("../fonts/opensans-bold.eot"),
+         url("../fonts/opensans-bold.woff2") format("woff2"),
+         url("../fonts/opensans-bold.ttf") format("truetype"),
+         url("../fonts/opensans-bold.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "opensans";
+    src: url("../fonts/opensans-bolditalic.eot"),
+         url("../fonts/opensans-bolditalic.woff2") format("woff2"),
+         url("../fonts/opensans-bolditalic.ttf") format("truetype"),
+         url("../fonts/opensans-bolditalic.svg") format("svg");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "opensans";
+    src: url("../fonts/opensans-lightitalic.eot"),
+         url("../fonts/opensans-lightitalic.woff2") format("woff2"),
+         url("../fonts/opensans-lightitalic.ttf") format("truetype"),
+         url("../fonts/opensans-lightitalic.svg") format("svg");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+
+
+/*-----------------MY CSS----------------------*/
+
+body{
+	font-size:16px;
+	font-family: "opensans";
+	text-align: center;
+	color:white;
+    min-width:480px;
+    background:black;
+}
+img {
+    display: block;
+    margin: 0 auto;
+	padding-top:20rem;
+}
+form{
+	text-align: center;
+}
+.caps{
+	text-transform: uppercase;
+}
+
+p{
+	padding:1rem;
+}
+#copyright{
+	font-weight:500;
+	color:#c2c2c2;
+	padding-top:10rem;
+}
+ul{
+	display:flex;
+	flex-flow:column nowrap;
+}
