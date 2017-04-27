@@ -1,0 +1,42 @@
+html{
+min-width:480px;
+}
+
+body{
+	font-size:16px;
+	font-family: "opensans";
+	text-align: center;
+	color:white;
+    
+    background:black;
+}
+img {
+    display: block;
+    margin: 0 auto;
+	padding-top:20rem;
+}
+form{
+	text-align: center;
+}
+.caps{
+	text-transform: uppercase;
+}
+
+p{
+	padding:1rem;
+}
+#copyright{
+	font-weight:500;
+	color:#c2c2c2;
+	padding-top:10rem;
+}
+ul{
+	display:flex;
+	flex-flow:column nowrap;
+}
+
+@media(min-width:600px){
+
+
+
+}
