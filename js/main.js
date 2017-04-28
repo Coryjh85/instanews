@@ -14,9 +14,9 @@ $(function(){
   })
   .done(function(data) {
     $.each(data.results, function(index, value){
-      if(!storyCategory.includes(value.section))
+      if(!storyCategory.includes(value.section)){
         storyCategory += '<option class="dropdown-item">' + value.section + '</option>'
-      
+      }      
       var all_sections = [data];
       var uniques = [];
       $.each(all_sections, function(i, section){
@@ -32,11 +32,10 @@ $(function(){
         }
       });
       console.log(uniques);
-      
     })
     $('#selection').append(storyCategory);
   })
   .fail(function(err) {
     console.log('ERROR', err);
   })
-});
+}); 
