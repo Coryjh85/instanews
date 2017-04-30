@@ -1,6 +1,9 @@
 html{
     min-width:480px;
     font-size:$basefontsize;
+	@desktop{
+		max-width:1240px;
+	}
 	}
 
 
@@ -50,8 +53,16 @@ li{
 	height:25rem;
 	background-size:cover;
 	background-repeat:no-repeat;
+	align-content:bottom;
+	
 }
-.headline{
+a{
+	position:bottom;
+	display:block;
+	line-height:150%;
+	background:rgba(0,0,0,0.6);
+	color:white;
 	text-decoration:none;
-	bottom:0;
+	font-family:"opensans";
+	font-weight:bold;
 }
