@@ -1,11 +1,8 @@
 html{
+	max-width:1240px;
     min-width:480px;
     font-size:$basefontsize;
-	@desktop{
-		max-width:1240px;
 	}
-	}
-
 
 body{
 	font-family: "opensans";
@@ -18,15 +15,26 @@ body{
     display: block;
     margin: 0 auto;
 	padding-top:20rem;
+	@include media ($desktop-width) {
+		display:inline;
+		margin:0,0;
+		}
 }
-.logosmall
+
+.logoSmall
 {
     display: block;
     margin: 0 auto;
 	padding-top:2rem;
+	@include media ($desktop-width) {
+		display:inline;
+		margin:0 0;
+		}
 }
+
 form{
 	text-align: center;
+	text-transform:capitalize;
 }
 
 .caps{
@@ -37,32 +45,53 @@ form{
 #copyright{
 	font-weight:500;
 	color:$greytext;
-	padding-top:10rem;
+	padding-top:5rem;
 }
 
 ul{
 	margin:0 auto;
 	display:flex;
-	flex-flow:column nowrap;
-	
+	flex-flow:row wrap;	
 }
 
 li{
+    align-content: flex-end;
 	width:100%;
 	margin:0 auto;
 	height:25rem;
 	background-size:cover;
 	background-repeat:no-repeat;
-	align-content:bottom;
-	
+	@include media ($tablet-width) {
+		width:33%;
+	}
+	@include media ($desktop-width) {
+		width:25%;
+		}
 }
-a{
-	position:bottom;
+
+a{    
+		
 	display:block;
+	align-content: flex-end;
+	width:100%;
 	line-height:150%;
 	background:rgba(0,0,0,0.6);
 	color:white;
 	text-decoration:none;
 	font-family:"opensans";
 	font-weight:bold;
+}
+
+#loading {
+   margin:0 auto;
+   position: fixed;
+   display: block;
+   z-index: 99;
+   text-align: center;
+}
+
+#loadingGif {
+  position: absolute;
+  margin:0 auto;
+  z-index: 100;
 }

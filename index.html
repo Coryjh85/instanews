@@ -9,23 +9,27 @@
 
 <body>
   <header>
-    <div class="logo">
+    <div id="logo" class="logo">
       <img src="assets/images/nyt-logo.svg">
     </div>
     <p>Choose a Section</p>
     <form id="form">
       <select id="selection">
       <option id="tech">Make a Selection</option>
-      <option id="tech">technology</option>
+      <option id="technology">technology</option>
       <option id="travel">travel</option>
       <option id="food">food</option>
       <option id="science">science</option>
       <option id="books">books</option>  
     </select>
     </form>
-  </header>
-  <ul class="articleGrid">
+      </header>
+  <div class="loading">
+    <img class="loadingGif" src="../assets/images/ajax-loader.gif" alt="Loading">
+  </div>  
+  <ul class="articleGrid"></ul>
     <footer id="copyright">©Copyright 2017 <span class="caps">instanews</span></footer>
+
 
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="build/js/main.min.js"></script>
