@@ -38,12 +38,12 @@ span{
 	  display: flex;
     flex-flow: row wrap;
 	  justify-content: center;
-  }
+    }
   @include media ($desktop-width) {
     display: flex;
     flex-flow: row wrap;
 	  justify-content:flex-start;
-  }
+    }
   }
 
 .logo {
@@ -52,14 +52,14 @@ span{
   width: 100%;
   @include media ($tablet-width) {
     padding: 0;
-  }
+    }
   }
 
 .logoSmall{
   width: 144px;
   @include media ($tablet-width) {
     width: 67px;
-  }
+    }
   }
 
 #loading {
@@ -67,16 +67,12 @@ span{
   margin:0 auto;
   position: fixed;
   text-align: center;
-  z-index: 99; 
   }
 
 #loadingGif {
   margin:0 auto;
   position: absolute;
-  z-index: 100;
 }
-
-
 
 ul{
 	display:flex;
