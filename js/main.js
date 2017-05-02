@@ -3,6 +3,7 @@ $(function () {
   $('select').change(function () {
     $('.articleGrid').empty();
     $('.loadingGif').show();
+    $('#head').removeClass('head').addClass('headSmall');
     $('#logo').removeClass('logo').addClass('logoSmall');
   });
 
