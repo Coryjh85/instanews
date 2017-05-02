@@ -15,5 +15,9 @@ This is my second project in the webdev cohort for RED Academy, in Vancouver. We
 <li>ajax</li>
 <li>New York Times' API</li>
 <li>Font Squirrel</li>
+</ul>
+
+<img src="./screenshot1.jpg">
+<img src="./screenshot2.jpg">
 
 
